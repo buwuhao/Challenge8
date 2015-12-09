@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.24/paper-full.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+  $('.gallery .gall_item').touchTouch();
+
+  });
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body class="page1" id="top">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo alt" height="113" width="269">
+          </a>
+        </h1>
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li class="current"><a href="index.html">home</a></li>
+               <li><a href="https://github.com/EC544-2015-Group2">Github</a></li>
+               <li><a href="https://drive.google.com/a/bu.edu/folderview?id=0B6J66gcx8FzyQldhcWRqZFRkeVk&usp=sharing">Slides</a></li>
+               <li><a href="https://piazza.com/class/iduhq4bo6p8354">Piazza</a></li>
+               <li><a href="index-4.html">Contacts</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+<!--=====================
+          Content
+======================-->
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - July 30, 2014!</div>
+  <div class="container">
+     <div class="row">
+      <div class="grid_6">
+        <div class="banner">
+		      <div class="gall_block">
+            <h1>Camera</h1>
+            <video id="camera" style="width: 440px;height: 420px;" autoplay></video>
+            <div id="btnGroup" style="position: relative; left: 200px">
+               <div class="row">
+                   <button id="btnUp" class="btn btn-default" style="position: relative; left: 50px" onclick="onControl(this.id)"><span class="glyphicon glyphicon-arrow-up"></span> </button>
+               </div>
+               <div class="row">
+                   <button id="btnLeft" class="btn btn-default" onclick="onControl(this.id)"><span class="glyphicon glyphicon-arrow-left"></span> </button>
+                   <button id="btnToggle" class="btn btn-default" onclick="onControl(this.id)">
+                       <span class="glyphicon glyphicon-play"></span>
+                       <span class="glyphicon glyphicon-pause"></span>
+                   </button>
+                   <button id="btnRight" class="btn btn-default" onclick="onControl(this.id)" ><span class="glyphicon glyphicon-arrow-right"></span> </button>
+               </div>
+               <div class="row">
+                   <button id="btnDown" class="btn btn-default" style="position: relative; left: 50px" onclick="onControl(this.id)"><span class="glyphicon glyphicon-arrow-down"></span> </button>
+               </div>
+           </div>
+         </div>
+	      </div>
+      </div>
+      <!-- <div class="grid_3">
+        <div class="banner">
+		  <div class="gall_block">
+        </div>
+		</div>
+      </div> -->
+      <div class="grid_5">
+        <div class="banner ">
+    		  <div class="gall_block">
+                    <canvas id="myCanvas" style="width: 800px; height: 660px;"></canvas>
+    		  </div>
+        </div>
+      </div>
+         </div>
+      <div class="row">
+        <div class="col col-lg-4">
+          <div class="block1">
+            <div class="count">1.</div>
+            Real-Time Streaming of the Camera on the Crawler
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="block1">
+            <div class="count">2.</div>
+            Manual Contol of the Crawler
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="block1">
+            <div class="count">3.</div>
+            Real-time Traction of the crawler on 4th Floor of Photonics Center
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col col-lg-4">
+              <h2 style="text-align: center;">Sponsor</h2>
+              <blockquote class="bq1">
+                  <img class="displayed" src="images/page1_img7.jpg" alt=""  height="120" width="268">
+                  <div class="extra_wrapper">
+                      <div class="bq_title color1" style="text-align: center;">BU UAV Team</div>
+                      Boston University’s Unmanned Aerial Vehicles Team (BU UAV) is an engineering student group focused on the emerging future of drones.
+                      <a href="http://www.bu.edu/uav/"><span class="fa fa-chevron-right"></span>more information</a>
+                  </div>
+              </blockquote>
+          </div>
+          <div class="col col-lg-4">
+              <h2 style="text-align: center;">Milestones</h2>
+              <div class="block2">
+                  <time datetime="2014-01-01">08<br>Dec</time>
+                  <div class="extra_wrapper">
+                      <div class="text1"><a href="https://s3.amazonaws.com/piazza-resources/iduhq4bo6p8354/ih5b05l9e52nr/Challenge_8.pdf?AWSAccessKeyId=AKIAJKOQYKAYOBKKVTKQ&Expires=1449479103&Signature=WAV%2BBIyQXGw1B3o4KyrKyq1JS8I%3D">Challenge 7 </a></div>Autonomous  Driving
+                  </div>
+              </div>
+              <div class="block2">
+                  <time datetime="2014-01-01">10<br>Dec</time>
+                  <div class="extra_wrapper">
+                      <div class="text1"><a href="https://s3.amazonaws.com/piazza-resources/iduhq4bo6p8354/ih5b05l9e52nr/Challenge_8.pdf?AWSAccessKeyId=AKIAJKOQYKAYOBKKVTKQ&Expires=1449479103&Signature=WAV%2BBIyQXGw1B3o4KyrKyq1JS8I%3D">Challenge 8 </a></div>Remote  Monitoring  and Control
+                  </div>
+                  <br>
+                  <a href="https://drive.google.com/a/bu.edu/folderview?id=0B6J66gcx8FzyQldhcWRqZFRkeVk&usp=sharing" style="font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: 20px;
+    line-height: 48px;
+    font-family: Economica, sans-serif;"><span class="fa fa-chevron-right"></span>more milestones</a>
+              </div>
+          </div>
+          <div class="col col-lg-4">
+              <h2 style="text-align: center;">Lab Hours</h2>
+              <ul class="shed">
+                  <li><span>Tuesday:</span> 2PM - 4PM</li>
+                  <li><span>Thursday:</span> 2PM - 4PM</li>
+                  <li><span>Friday:</span> 2PM - 4PM</li>
+              </ul>
+          </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <div class="socials">
+          <a href="https://twitter.com/Daniel19931024" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/daniel.peng.1441" class="fa fa-facebook" href></a>
+          <a href="https://www.instagram.com/danielpeng1993/" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/in/xinpeng1" class="fa fa-linkedin"></a>
+        </div>
+        <div class="copyright"><span class="brand">EC544-Group2</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">Xin Peng & Ye Liu</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script>
+var socket = io();
+function onControl(id) {
+socket.emit('control', function (data) {
+    console.log(data);
+})
+}
+window.onload = function() {
+paper.install(window);
+paper.setup('myCanvas');
+var wallPath = new Path({
+    segments: [
+        [440,640],
+        [440, 40],
+        [40, 40],
+        [40,640]
+    ],
+    strokeColor: 'black',
+    strokeWidth: 3,
+    closed: false
+});
+var wallPath1 = new Path({
+    segments: [
+        [380,640],
+        [380,580],
+        [100,580],
+        [100,640]
+    ],
+    strokeColor: 'black',
+    strokeWidth: 3,
+    closed: false
+});
+var wallPath2 = new Path({
+    segments: [
+        [100,100],
+        [100,520],
+        [140,520],
+        [140,440],
+        [340,440],
+        [340,520],
+        [380,520],
+        [380,100]
+
+
+    ],
+    strokeColor: 'black',
+    strokeWidth: 3,
+    closed: true
+});
+var beaconLocations = [
+    [62, 62],
+    [62, 558],
+    [418, 558],
+    [418, 62]
+]
+var beaconPaths = beaconLocations.map(function(location) {
+//            var beaconPath = new Path.Circle(location, 10);
+//            beaconPath.fillColor = 'red';
+//            return beaconPath;
+    var path = new Path.Star({
+        center: location,
+        points: 5,
+        radius1: 8,
+        radius2: 22,
+        rotation: 35,
+        fillColor: 'red'
+    });
+});
+}
+</script>
+</body>
+</html>
